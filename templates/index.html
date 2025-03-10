@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Spam Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SMS Spam Classifier</h1>
+    <form method="POST" action="/predict">
+        <label for="message">Enter your message:</label><br>
+        <input type="text" id="message" name="message" required><br><br>
+        <button type="submit">Check</button>
+    </form>
+
+    {% if message %}
+        <h2>Message: {{ message }}</h2>
+        <h3>Prediction: <strong>{{ prediction }}</strong></h3>
+    {% endif %}
+</body>
+</html>
