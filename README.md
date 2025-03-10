@@ -149,7 +149,7 @@ if __name__ == '__main__':
 ## 🖼️ Screenshot of the App
 Here’s how the SMS Spam Classifier web app looks:
 
-![SMS Spam Classifier](screenshot.png)
+![SMS Spam Classifier](appimg.png)
 
 ## 🎯 **Conclusion**
 - This project **detects spam messages** using **Naïve Bayes classification**.  
